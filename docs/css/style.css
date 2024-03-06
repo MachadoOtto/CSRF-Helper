@@ -3,7 +3,7 @@ body {
     color: #fff;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     text-align: center;
 }
 
@@ -20,7 +20,7 @@ body {
 
 #request-input, #poc-output {
     width: 80vh;
-    height: 65vh;
+    height: 70vh;
     font-family: inherit;
     background-color: #222;
     color: #fff;
@@ -44,7 +44,7 @@ body {
     margin: 0 20px;
     cursor: pointer;
     display: inline-block;
-    padding: 10px;
+    padding: 8px;
     border: 2px dashed transparent;
 }
 
@@ -65,17 +65,15 @@ body {
 
 #reproduce-section {
     flex: 1;
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #execute-button{
-    margin: 0 20px;
     cursor: pointer;
     display: inline-block;
-    padding: 10px;
+    padding: 8px;
     border: 2px dashed transparent;
 }
 
@@ -87,15 +85,6 @@ body {
 #execute-button.disabled {
     color: grey;
     pointer-events: none;
-}
-
-#poc-result {
-    width: 160vh;
-    height: 30vh;
-    font-family: inherit;
-    background-color: #222;
-    color: #fff;
-    margin-top: 10px;
 }
 
 #hidden-from {
