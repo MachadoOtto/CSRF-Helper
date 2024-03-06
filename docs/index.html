@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <title>CSRF Helper</title>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            html,
+            body,
+            pre,
+            code,
+            kbd,
+            samp {
+                font-family: "Press Start 2P";
+            }
+        </style>
+    </head>
+<body>
+    <h1>CSRF Helper</h1>
+    <div id="top-section">
+        <div id="request-section">
+            <div id="request-header">
+                <h2>Request:</h2>
+                <label id="https-label">
+                    <input type="checkbox" id="is-https">Is HTTPS?
+                </label>
+            </div>
+            <textarea id="request-input" rows="10" cols="50"></textarea>
+        </div>
+    
+        <a id="generate-button"><span>Generate</span> <i id="toolbox-arrow" class="fa-solid fa-chevron-right"></i></a>
+    
+        <div id="poc-section">
+            <div id="request-header">
+                <h2>PoC:</h2>
+                <div id="poc-options">
+                    <a id="copy-button" class="btn"><i class="fas fa-copy"></i></a>
+                    <a id="download-button" class="btn"><i class="fas fa-download"></i></a>
+                </div>
+            </div>
+            <textarea id="poc-output" rows="10" cols="50" readonly></textarea>
+        </div>
+    </div>
+
+    <div id="reproduce-section">
+        <a id="execute-button" class="disabled"><span>Execute PoC</span> <i id="toolbox-arrow" class="fa-solid fa-rocket"></i></a>
+    </div>
+    <div id="hidden-form"></div>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/34101942fe.js" crossorigin="anonymous"></script>
+    <footer>
+        <p>Jorge Machado - <a href="https://github.com/MachadoOtto" target="_blank" class="github-link">https://github.com/MachadoOtto</a>
+        </p>
+    </footer>
+</body>
+</html>

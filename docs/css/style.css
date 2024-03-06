@@ -1,0 +1,127 @@
+body {
+    background: linear-gradient(to bottom, #000000, #333);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+}
+
+#top-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#request-section, #poc-section {
+    flex: 1;
+}
+
+#request-input, #poc-output {
+    width: 80vh;
+    height: 65vh;
+    font-family: inherit;
+    background-color: #222;
+    color: #fff;
+}
+
+#request-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#https-label {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+#generate-button {
+    margin: 0 20px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    border: 2px dashed transparent;
+}
+
+#generate-button:hover {
+    border-color: #fff;
+    border-radius: 10px;
+}
+
+#poc-section {
+    position: relative;
+}
+
+#copy-button, #download-button {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+#reproduce-section {
+    flex: 1;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#execute-button{
+    margin: 0 20px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    border: 2px dashed transparent;
+}
+
+#execute-button:hover {
+    border-color: #fff;
+    border-radius: 10px;
+}
+
+#execute-button.disabled {
+    color: grey;
+    pointer-events: none;
+}
+
+#poc-result {
+    width: 160vh;
+    height: 30vh;
+    font-family: inherit;
+    background-color: #222;
+    color: #fff;
+    margin-top: 10px;
+}
+
+#hidden-from {
+    display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    background: #000;
+    color: #fff;
+    z-index: 2;
+}
+
+footer p {
+    margin: 0;
+    font-size: 10px;
+}
+
+.github-link {
+    right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
