@@ -22,3 +22,12 @@ To install and run CSRF Helper on your own system, follow these steps:
 
 1. Clone this repository to your local system.
 2. Open the `index.html` file in your browser.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](https://raw.githubusercontent.com/MachadoOtto/CSRF-Helper/main/LICENSE) file for details.
+
+## Disclaimer
+This script is provided as-is, without any warranties or guarantees. Use this tool responsibly and only on systems and applications you are authorized to test. If you use it for evil you should feel bad :(
+
+- The Monada 🙈🙉🙊
